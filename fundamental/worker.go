@@ -1,6 +1,10 @@
-package langs
+package fundamental
 
-import "github.com/ge-editor/gecore/lang"
+import (
+	"github.com/ge-editor/gecore/lang"
+
+	"github.com/ge-editor/langs/abstract"
+)
 
 // ------------------------------------------------------------------
 // Fundamental implement gecore Mode interface
@@ -8,14 +12,14 @@ import "github.com/ge-editor/gecore/lang"
 
 func NewFundamental() lang.Mode {
 	return &Fundamental{
-		AbstractWorker: AbstractWorker{
-			exts: []string{}, // Initialize the `exts` field of AbstractWorker
+		Worker: abstract.Worker{
+			Exts: []string{}, // Initialize the `Exts` field of abstract.Worker
 		},
 	}
 }
 
 type Fundamental struct {
-	AbstractWorker
+	abstract.Worker
 }
 
 func (f *Fundamental) Name() string {

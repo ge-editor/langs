@@ -1,4 +1,4 @@
-package langs
+package go_mode
 
 import (
 	"bytes"
@@ -9,6 +9,8 @@ import (
 	"github.com/ge-editor/gecore/lang"
 
 	"github.com/ge-editor/utils"
+
+	"github.com/ge-editor/langs/abstract"
 )
 
 // ------------------------------------------------------------------
@@ -17,16 +19,16 @@ import (
 
 func NewGoMode() lang.Mode {
 	return &GoMode{
-		AbstractWorker: AbstractWorker{
+		Worker: abstract.Worker{
 			// Initialize the `exts` field of AbstractWorker
 			// allowed extensions
-			exts: []string{".go" /* , ".mod", ".sum" */},
+			Exts: []string{".go" /* , ".mod", ".sum" */},
 		},
 	}
 }
 
 type GoMode struct {
-	AbstractWorker
+	abstract.Worker
 }
 
 func (gm *GoMode) Name() string {
