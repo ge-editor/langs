@@ -5,7 +5,6 @@ go 1.23.4
 require (
 	github.com/gdamore/tcell/v2 v2.9.0
 	github.com/ge-editor/gecore v0.1.0
-	github.com/ge-editor/langs v0.1.0
 	github.com/ge-editor/theme v0.1.0
 	github.com/smacker/go-tree-sitter v0.0.0-20240827094217-dd81d9e9be82
 )
