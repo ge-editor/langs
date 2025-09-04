@@ -12,14 +12,16 @@ import (
 
 func NewFundamental() lang.Mode {
 	return &Fundamental{
-		Worker: abstract.Worker{
-			Exts: []string{}, // Initialize the `Exts` field of abstract.Worker
-		},
+		Worker: abstract.Worker{},
+		exts:   []string{},
 	}
 }
 
 type Fundamental struct {
 	abstract.Worker
+	exts      []string
+	tabWidth  int
+	isSoftTab bool
 }
 
 func (f *Fundamental) Name() string {
