@@ -1,4 +1,4 @@
-module langs
+module github.com/ge-editor/langs
 
 go 1.23.4
 
