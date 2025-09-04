@@ -4,9 +4,9 @@ go 1.23.4
 
 require (
 	github.com/gdamore/tcell/v2 v2.9.0
-	github.com/ge-editor/gecore v0.0.0-20241212064713-1ab9dbfc237e
-	github.com/ge-editor/langs v0.0.0-00010101000000-000000000000
-	github.com/ge-editor/theme v0.0.0-20241212064713-d2fca1917aa2
+	github.com/ge-editor/gecore v0.1.0
+	github.com/ge-editor/langs v0.1.0
+	github.com/ge-editor/theme v0.1.0
 	github.com/smacker/go-tree-sitter v0.0.0-20240827094217-dd81d9e9be82
 )
 
@@ -19,4 +19,3 @@ require (
 	golang.org/x/term v0.34.0 // indirect
 	golang.org/x/text v0.28.0 // indirect
 )
-
